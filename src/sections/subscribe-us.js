@@ -8,6 +8,7 @@ import { toast, ToastContainer } from "react-nextjs-toast";
 const SubscribeUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(e);
     const email = e.target[0].value;
     if (email) {
       fetch("/api/mail", {
