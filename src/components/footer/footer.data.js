@@ -35,13 +35,13 @@ export const menuItems = [
     title: "Contáctanos",
     items: [
       {
-        href: "https://wa.me/message/RYOIUPWRLW6ZL1",
+        href: "https://wa.me/message/X6XC44WTFKH4C1",
         target: "_blank",
         icon: whatsapp,
-        label: "(+57) 311 312 13 61",
+        label: "(+57) 320 784 48 54",
       },
       {
-        href: "https://wa.me/message/RYOIUPWRLW6ZL1",
+        href: "https://wa.me/message/X6XC44WTFKH4C1",
         target: "_blank",
         label: "Solicito.software@gmail.com Medellín - Colombia",
       },

@@ -20,6 +20,9 @@ const SubscribeUs = () => {
             onClickNotify();
             e.target.reset();
           }
+        })
+        .catch((error) => {
+          console.error(error);
         });
     }
   };
