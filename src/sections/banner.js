@@ -13,13 +13,13 @@ const Banner = () => {
         <Box sx={styles.contentWrapper}>
           <SectionHeading
             sx={styles.heading}
-            title="Desarrollamos Soluciones Tecnológicas Según Tus Necesidades"
-            description="Agiliza el Crecimiento de tu Negocio con Nuestra Ayuda Haz Parte de la Revolución Tecnológica."
+            title="Desarrollamos Soluciones Tecnológicas"
+            description="Únete a la revolución tecnológica con nuestras soluciones personalizadas que impulsan el crecimiento de tu negocio."
           />
           <Box as="figure" sx={styles.illustration}>
             <Box sx={styles.buttonWrapper}>
               <Button>
-                 <NavLink path="services" label="!Comienza Ahora¡" />
+                <NavLink path="services" label="Comienza Ahora" />
               </Button>
             </Box>
             <Image src={illustration} alt="illustration" />

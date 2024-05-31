@@ -2,14 +2,14 @@ const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default (req, res) => {
-  const email = JSON.parse(req.body);
+  const { email, nombre } = JSON.parse(req.body);
 
   const msgcliente = {
     to: "solicito.software@gmail.com",
     from: "solicito.software@gmail.com",
-    subject: "Solicitud Cliente Potencial",
+    subject: "Solicitud cliente potencial",
     text: "and easy to do anywhere, even with Node.js",
-    html: `Ponerse en contacto con el cliente: <strong>${email}</strong>`,
+    html: `Ponerse en contacto con el cliente: <strong>${nombre}</strong> al email: <strong>${email}</strong>`,
   };
 
   const msgEmpresa = {

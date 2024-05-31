@@ -13,19 +13,19 @@ const data = [
     id: 1,
     icon: icon1,
     title: "Sitio Web",
-    description: `Adquiere una página de inicio llamativa para captar la atención y aumentar las visitas de más usuarios.`,
+    description: `Captura la atención con un diseño que enamora a primera vista y optimiza el tráfico de usuarios.`,
   },
   {
     id: 3,
     icon: icon2,
     title: "Aplicación Web",
-    description: `Cree un lugar de trabajo innovador e interactivo con el cual aumentar la productividad de su negocio.`,
+    description: `Crea un entorno de trabajo innovador e interactivo y mejora la productividad de tu negocio.`,
   },
   {
     id: 4,
     icon: icon3,
     title: "Aplicación Móvil",
-    description: `Lleva tu negocio en la palma de tu mano y está presente en todos los procesos desde cualquier lugar.`,
+    description: `Gestiona tu negocio desde cualquier lugar y mantente conectado en todo momento.`,
   },
 ];
 
@@ -35,8 +35,8 @@ const Services = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Descubre Tu Identidad con Nuestros Servicios"
-          description="Creemos Juntos la Herramienta Ideal que Necesitas."
+          title="Descubre tu identidad con nuestros servicios"
+          description="Creemos juntos la herramienta ideal que necesitas."
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (

@@ -8,22 +8,23 @@ import { toast, ToastContainer } from "react-nextjs-toast";
 const SubscribeUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = e.target[0].value;
-    if (email) {
+    const nombre = e.target[0].value;
+    const email = e.target[1].value;
+    if (email && nombre) {
       fetch("/api/mail", {
         method: "post",
-        body: JSON.stringify(email),
+        body: JSON.stringify({ email, nombre }),
       })
         .then((response) => response.json())
         .then((data) => {
           if (data.status == "OK") {
             onClickNotify();
-            e.target.reset();
           }
         })
         .catch((error) => {
           console.error(error);
         });
+      e.target.reset();
     }
   };
 
@@ -47,18 +48,27 @@ const SubscribeUs = () => {
           <SectionHeading
             sx={styles.heading}
             title="¿Te gusta nuestro servicio?"
-            description="Dejamos tu información y nos pondremos en contacto para iniciar ese proyecto juntos."
+            description="Déjanos tu información y nos pondremos en contacto para iniciar tu proyecto. ¡Vamos a crear algo increíble juntos!"
           />
           <Box as="form" sx={styles.subscribe} onSubmit={handleSubmit}>
             <Flex sx={styles.inputGroup}>
+              <Label htmlFor="nombre" variant="styles.srOnly">
+                Nombre
+              </Label>
+              <Input
+                id="nombre"
+                type="nombre"
+                className="input"
+                placeholder="Ingrese su nombre"
+              />
               <Label htmlFor="email" variant="styles.srOnly">
                 Email
               </Label>
               <Input
                 id="email"
                 type="email"
-                className="email-input"
-                placeholder="Ingrese su Email"
+                className="input"
+                placeholder="Ingrese su email"
               />
               <Button variant="primary">Enviar</Button>
             </Flex>
@@ -102,8 +112,7 @@ const styles = {
     },
   },
   subscribe: {
-    ".email-input": {
-      mr: [0, null, null, "15px"],
+    ".input": {
       minHeight: ["50px", "50px", "60px"],
     },
     button: {
@@ -113,6 +122,7 @@ const styles = {
     },
   },
   inputGroup: {
-    flexDirection: ["column", null, null, "row"],
+    display: "grid",
+    gap: "1rem",
   },
 };

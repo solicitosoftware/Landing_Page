@@ -14,9 +14,12 @@ const data = [
     id: 1,
     tabTitle: "¿Por qué elegir nuestros servicio?",
     title: `LOS CLIENTES SON NUESTRO SERVIR`,
-    description: 'Nuestra calidad profesional, humana y experiencia nos destaca, dándonos la facilidad de entender sus necesidades rápidamente para afrontar los desafíos y a su vez ofrecer una solución adecuada a cada situación específica.',
-    description2: 'Brindamos una atención personalizada con diligencia y amabilidad, tomando cada proyecto con la relevancia requerida para comprender y ayudar a alcanzar las metas propuestas.',
-    description3: 'Cada proyecto es único, por lo cual te guiaremos a encontrar tu Identidad como marca y destacar con ideas creativas frente al entorno en el que te encuentres.',
+    description:
+      "Nuestra calidad profesional, humana y experiencia nos destaca, dándonos la facilidad de entender sus necesidades rápidamente para afrontar los desafíos y a su vez ofrecer una solución adecuada a cada situación específica;",
+    description2:
+      "brindamos una atención personalizada con diligencia y amabilidad tomando cada proyecto con la relevancia requerida para comprender y ayudar a alcanzar las metas propuestas.",
+    description3:
+      "Cada proyecto es único, por lo cual te guiaremos a encontrar tu identidad como marca y destacar con ideas creativas frente al entorno en el que te encuentres.",
     image: tabImage1,
   },
   {
@@ -77,7 +80,7 @@ const styles = {
   },
   tabs: {
     border: 0,
-    ".rc-tabs-ink-bar" : {
+    ".rc-tabs-ink-bar": {
       backgroundColor: "primary",
     },
     ".rc-tabs-nav": {

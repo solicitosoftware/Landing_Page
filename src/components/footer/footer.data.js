@@ -6,24 +6,8 @@ import whatsapp from "assets/images/icons/whatsapp.png";
 export const menuItems = [
   {
     id: 2,
-    title: "Colaboradores",
-    items: [
-      {
-        href: "https://www.storyset.com/",
-        target: "_blank",
-        label: "Imagenes",
-      },
-      {
-        href: "https://www.freepik.es/",
-        target: "_blank",
-        label: "Recursos",
-      },
-      {
-        href: "https://www.flaticon.com/",
-        target: "_blank",
-        label: "Iconos",
-      },
-    ],
+    title: "",
+    items: [],
   },
   {
     id: 3,
@@ -32,6 +16,11 @@ export const menuItems = [
   },
   {
     id: 4,
+    title: "",
+    items: [],
+  },
+  {
+    id: 5,
     title: "Contáctanos",
     items: [
       {
@@ -43,28 +32,7 @@ export const menuItems = [
       {
         href: "https://wa.me/message/X6XC44WTFKH4C1",
         target: "_blank",
-        label: "Solicito.software@gmail.com Medellín - Colombia",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Redes Sociales",
-    items: [
-      {
-        path: "#!",
-        icon: facebook,
-        label: "Facebook",
-      },
-      {
-        path: "#!",
-        icon: instagram,
-        label: "Instagram",
-      },
-      {
-        path: "#!",
-        icon: github,
-        label: "Github",
+        label: "Solicito.software@gmail.com",
       },
     ],
   },

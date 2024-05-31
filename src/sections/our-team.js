@@ -7,16 +7,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SectionHeading from "components/section-heading";
 import TeamMember from "components/cards/team-member";
 
-import logo1 from "assets/images/team/node.png";
-import logo2 from "assets/images/team/react.png";
-import logo3 from "assets/images/team/javascript.png";
-import logo4 from "assets/images/team/redux.png";
-import logo5 from "assets/images/team/mongo.png";
-import logo6 from "assets/images/team/firebase.jpg";
-import logo7 from "assets/images/team/google.jpg";
-import logo8 from "assets/images/team/net.png";
-import logo9 from "assets/images/team/sql.jpeg";
-import logo10 from "assets/images/team/pwa.png";
+import aws from "assets/images/team/aws.png";
+import css from "assets/images/team/css.png";
+import express from "assets/images/team/express.png";
+import firebase from "assets/images/team/aws.png";
+import flutter from "assets/images/team/flutter.png";
+import google from "assets/images/team/google.png";
+import html from "assets/images/team/html.png";
+import javascript from "assets/images/team/javascript.png";
+import laravel from "assets/images/team/laravel.png";
+import mongo from "assets/images/team/mongo.png";
+import net from "assets/images/team/net.png";
+import postgres from "assets/images/team/postgres.png";
+import python from "assets/images/team/python.png";
+import react from "assets/images/team/react.png";
+import redux from "assets/images/team/redux.png";
+import sql from "assets/images/team/sql.png";
+import typescript from "assets/images/team/typescript.png";
+import vue from "assets/images/team/vue.png";
 import arrowRight from "assets/images/icons/arrow-right.png";
 
 SwiperCore.use([Navigation, Pagination]);
@@ -24,43 +32,75 @@ SwiperCore.use([Navigation, Pagination]);
 const data = [
   {
     id: 1,
-    logo: logo1,
+    logo: google,
   },
   {
     id: 2,
-    logo: logo2,
+    logo: postgres,
   },
   {
     id: 3,
-    logo: logo3,
+    logo: express,
   },
   {
     id: 4,
-    logo: logo4,
+    logo: react,
   },
   {
     id: 5,
-    logo: logo5,
+    logo: flutter,
   },
   {
     id: 6,
-    logo: logo6,
+    logo: aws,
   },
   {
     id: 7,
-    logo: logo7,
+    logo: mongo,
   },
   {
     id: 8,
-    logo: logo8,
+    logo: laravel,
   },
   {
     id: 9,
-    logo: logo9,
+    logo: vue,
   },
   {
     id: 10,
-    logo: logo10,
+    logo: python,
+  },
+  {
+    id: 11,
+    logo: firebase,
+  },
+  {
+    id: 12,
+    logo: sql,
+  },
+  {
+    id: 13,
+    logo: net,
+  },
+  {
+    id: 14,
+    logo: redux,
+  },
+  {
+    id: 15,
+    logo: typescript,
+  },
+  {
+    id: 16,
+    logo: javascript,
+  },
+  {
+    id: 17,
+    logo: html,
+  },
+  {
+    id: 18,
+    logo: css,
   },
 ];
 
@@ -106,15 +146,15 @@ const OurTeam = () => {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 0,
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 0,
     },
     1601: {
       slidesPerView: 5,
-      spaceBetween: 30,
+      spaceBetween: 0,
     },
   };
 

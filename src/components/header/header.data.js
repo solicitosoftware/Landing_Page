@@ -13,7 +13,7 @@ export default [
   },
   {
     path: "valores",
-    label: "Habilidades",
+    label: "Adicionales",
   },
   {
     path: "why-us",

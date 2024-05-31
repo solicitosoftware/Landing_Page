@@ -13,19 +13,19 @@ const data = [
     id: 1,
     icon: icon4,
     title: "Diseños Únicos",
-    description: `Somos creativos y soñadores por eso pensamos que una marca siempre debe dejar huella.`,
+    description: `Innovamos con diseños únicos que resalten tus valores y objetivos para que tu marca deje huella.`,
   },
   {
     id: 2,
     icon: icon5,
     title: "Servicio Personalizado",
-    description: `Nos apasiona trabajar de la mano con nuestros clientes para hacer sus labores más sencillas.`,
+    description: `Trabajamos estrechamente contigo para simplificar tus procesos.`,
   },
   {
     id: 3,
     icon: icon6,
     title: "Soporte en Línea",
-    description: `Estamos alertas en todo momento para que sus procesos sean seguros y confiables.`,
+    description: `Te ofrecemos soporte continuo para asegurar la fiabilidad y seguridad de tus operaciones.`,
   },
 ];
 
